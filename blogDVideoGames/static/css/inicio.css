@@ -1,0 +1,40 @@
+.contenidoInicio {
+    display: flex;
+    justify-content: space-between; /* Coloca texto e imagen en extremos opuestos */
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+    gap: 20px; /* Espacio entre texto e imagen */
+}
+
+.textoInicio {
+    max-width: 60%; /* Limita el ancho del contenedor de texto */
+    text-align: justify; /* Asegura que el texto esté alineado a la izquierda */
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+
+.tituloInicio {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+}
+
+.textoInicio .presentacionInicio {
+    font-size: 1.875rem; /* 30px es aproximadamente 1.875rem */
+    text-align: justify; /* Justifica el texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+.imagenInicio {
+    max-width: 35%; /* Limita el tamaño de la imagen en relación al contenedor */
+    padding-top: 200px;
+}
+
+.imagenInicio img {
+    border-radius: 10%;
+    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+
+}
+
+  

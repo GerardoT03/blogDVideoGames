@@ -1,0 +1,34 @@
+{% extends 'plantillaPadre.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/css/inicio.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+<div class="contenidoInicio">
+    
+    <div class="textoInicio">
+        <h1 class="tituloInicio">
+            Bienvenido a BlogGame 
+        </h1>
+        <p class="presentecionInicio">
+            <p style="text-align: center;">Tu blog definitivo para conocer todo lo relacionado a los videojuegos</p><br><br>
+
+            En blogGame, te mantenemos al d&iacute;a con las &uacute;ltimas noticias, rese&ntilde;as, y avances
+            del mundo gamer. Ya seas un veterano con d&eacute;cadas de experiencia o un reci&eacute;n llegado
+            al universo de los videojuegos, aqu&iacute; encontrar&aacute;s contenido especialmente dise&ntilde;ado para ti.
+            Descubre las mejores estrategias, participa en nuestras comunidades y sum&eacute;rgete en la 
+            experiencia de juego con nosotros. ¡Elige tu aventura y &uacute;nete a la diversi&oacute;n!
+        </p>
+    </div>
+    <div class="imagenInicio">
+        <img src="{% static '/img/super-mario.jpg' %}" alt=" fondo" width="550px">
+    </div>
+
+
+</div>
+{% endblock %}

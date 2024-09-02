@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogVideoGames</title>
+    <link rel="stylesheet" href="{% static 'css/plantillaP.css' %}">
+    {% block extra_css %}{% endblock %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Encabezado del sitio -->
+    <header class="contenido" style="background-image: url({% static 'img/fondoLogin.png' %})";>
+        <a href="#">
+            <img src="{% static 'img/Logotipo.png' %}" alt="Logotipo de BlogVideoGames" width="85px">
+        </a>
+
+        <nav class="login">
+            <ul>
+                <li><a href="/login">Iniciar sesi&oacute;n</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header><br><br>
+
+    <!-- Sección dinámica del contenido -->
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
